@@ -1,3 +1,8 @@
+
+# Changes to System Administration Scope (sudoers)
+-w /etc/sudoers -p wa -k scope
+-w /etc/sudoers.d/ -p wa -k scope
+
 # Login and Logout Events
 -w /var/log/faillog -p wa -k logins
 -w /var/log/lastlog -p wa -k logins

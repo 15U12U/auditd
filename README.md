@@ -1,4 +1,4 @@
-# Linux Auditd Configuration file template
+# Linux Auditd configuration file templates
 
 ## For CentOS/RedHat/Oracle Linux Systems
 [CentOS Audit Rules](https://github.com/15U12U/auditd/blob/main/centos-audit.rules)

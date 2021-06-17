@@ -8,11 +8,11 @@
 
 # Send audit logs via syslog
 
-## Edit audispd
+## Edit audispd syslog configuration file
 ```bash
 vim /etc/audisp/plugins.d/syslog.conf
 ```
-## Edit syslog.conf
+## Edit the following line to activate the feature
 ```
 active = yes
 ```

@@ -20,8 +20,44 @@ apt list audispd-plugins
 ```
 or
 ```bash
-dpkg --list auditd
-dpkg --list audispd-plugins
+dpkg -l auditd
+dpkg -l audispd-plugins
+```
+
+# Check the run levels of the packages
+## RHEL/Oracle Linux/CentOS
+```bash
+chkconfig --list auditd
+chkconfig --list audispd-plugins
+```
+or
+```bash
+systemctl status auditd
+systemctl status audispd-plugins
+```
+
+## Debian/Ubuntu
+```bash
+systemctl status auditd
+systemctl status audispd-plugins
+```
+
+# Enable run levels of the packages
+## RHEL/Oracle Linux/CentOS
+```bash
+chkconfig auditd on
+chkconfig audispd-plugins on
+```
+or
+```bash
+systemctl enable auditd
+systemctl enable audispd-plugins
+```
+
+## Debian/Ubuntu
+```bash
+systemctl enable auditd
+systemctl enable audispd-plugins
 ```
 
 # Send audit logs via syslog

@@ -32,14 +32,14 @@ chkconfig --list audispd-plugins
 ```
 or
 ```bash
-systemctl status auditd
-systemctl status audispd-plugins
+systemctl is-enabled auditd
+systemctl is-enabled audispd-plugins
 ```
 
 ## Debian/Ubuntu
 ```bash
-systemctl status auditd
-systemctl status audispd-plugins
+systemctl is-enabled auditd
+systemctl is-enabled audispd-plugins
 ```
 
 # Enable run levels of the packages

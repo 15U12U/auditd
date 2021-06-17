@@ -9,8 +9,8 @@
 # Check for installed auditing packages
 ## RHEL/Oracle Linux/CentOS
 ```bash
-rpm -qa audit
-rpm -qa audispd-plugins
+rpm -q audit
+rpm -q audispd-plugins
 ```
 
 ## Debian/Ubuntu

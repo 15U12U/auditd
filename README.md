@@ -63,6 +63,11 @@ systemctl enable audispd-plugins
 ```bash
 vim /etc/audisp/plugins.d/syslog.conf
 ```
+or
+```bash
+vim /etc/audit/plugins.d/syslog.conf
+```
+
 ## Edit the following line to activate the feature
 ```
 active = yes

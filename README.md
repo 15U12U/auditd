@@ -9,19 +9,16 @@
 # Check for installed auditing packages
 ## RHEL/Oracle Linux/CentOS
 ```bash
-rpm -q audit
-rpm -q audispd-plugins
+rpm -q audit audit-libs audispd-plugins
 ```
 
 ## Debian/Ubuntu
 ```bash
-apt list auditd
-apt list audispd-plugins
+apt list auditd audispd-plugins
 ```
 or
 ```bash
-dpkg -l auditd
-dpkg -l audispd-plugins
+dpkg -l auditd audispd-plugins
 ```
 
 # Check the run levels of the packages

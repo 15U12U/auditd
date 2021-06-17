@@ -70,3 +70,4 @@ vim /etc/audisp/plugins.d/syslog.conf
 ```
 active = yes
 ```
+

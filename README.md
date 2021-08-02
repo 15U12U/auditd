@@ -1,10 +1,9 @@
-# Linux Auditd configuration file templates
+# Linux Audit rules templates
 
-## For CentOS/RedHat/Oracle Linux Systems
-[CentOS Audit Rules](https://github.com/15U12U/auditd/blob/main/centos-audit.rules)
+- [CentOS/RedHat/Oracle Audit Rules](https://github.com/15U12U/auditd/blob/main/centos-audit.rules)
+- [Debian/Ubuntu Audit Rules](https://github.com/15U12U/auditd/blob/main/ubuntu-audit.rules)
 
-## For Debian/Ubuntu Linux Systems
-[Ubuntu Audit Rules](https://github.com/15U12U/auditd/blob/main/ubuntu-audit.rules)
+<br>
 
 # Check for installed auditing packages
 ## RHEL/Oracle Linux/CentOS
@@ -20,6 +19,8 @@ or
 ```bash
 dpkg -l auditd audispd-plugins
 ```
+
+<br>
 
 # Check the run levels of the packages
 ## RHEL/Oracle Linux/CentOS
@@ -39,6 +40,8 @@ systemctl is-enabled auditd
 systemctl is-enabled audispd-plugins
 ```
 
+<br>
+
 # Enable run levels of the packages
 ## RHEL/Oracle Linux/CentOS
 ```bash
@@ -57,8 +60,9 @@ systemctl enable auditd
 systemctl enable audispd-plugins
 ```
 
-# Send audit logs via syslog
+<br>
 
+# Send audit logs via syslog
 ## Edit audispd syslog configuration file
 ```bash
 vim /etc/audisp/plugins.d/syslog.conf
